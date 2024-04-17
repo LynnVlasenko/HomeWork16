@@ -13,8 +13,8 @@ extension OnboardingViewController {
         // didTabSignInToGoButtonComplition
         contentView.didTabGoToMainButtonComplition = { [weak self] in
             guard let self = self else { return }
-            let mainTabbarVC = MainViewController()
-            self.navigationController?.pushViewController(mainTabbarVC, animated: true)
+            let mainVC = MainViewController()
+            self.navigationController?.pushViewController(mainVC, animated: true)
             navigationController?.isNavigationBarHidden = true
         }
     }
